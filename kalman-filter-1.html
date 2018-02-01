@@ -28,8 +28,12 @@
 
     <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2018-02-01T00:00:00-08:00">
+        <abbr class="published" title="2018-02-01T11:50:00-08:00">
                 Published: Thu 01 February 2018
+        </abbr>
+		<br />
+        <abbr class="modified" title="2018-02-01T12:51:00-08:00">
+                Updated: Thu 01 February 2018
         </abbr>
 
         <address class="vcard author">
@@ -41,8 +45,11 @@
 <p>This is my first time hearing and learning Kalman Filter. </p>
 <p>When I was getting into Udacity's Linear Algebra Refresh Course in lesson 4, the topic of Kalman Filter was brought up, and no previous lessons in the course have introduced nor explained it. </p>
 <p>So upon Googling it, I have found that MatLab's company MathWorks have some videos about it here:
-<code>https://www.mathworks.com/videos/series/understanding-kalman-filters.html</code></p>
+https://www.mathworks.com/videos/series/understanding-kalman-filters.html</p>
+<h2>Basic Understanding</h2>
 <p>From what I got from the first video, Kalman Filter is basically an algorithm that estimates a value that cannot be directly captured, but by other sources that are indirectly related to it. One of the example the tutorial uses is to show how Kalman Filter is used in estimating the location of a car when only the gyroscope and the odometer were available in the absent of GPS. </p>
+<h2>State Observer</h2>
+<p>To implement a Kalman Filter, we will use a state observer to check the measeured value with estimated value. The state observer is basically a mathamatical model that takes in the measured input and estimate the output and check against the mesaured output. With it the error of the observation betwee the estimate and mesaured value will be used in a Kalman Filter to find the value that we would like to find.</p>
     </div><!-- /.entry-content -->
 
   </article>
